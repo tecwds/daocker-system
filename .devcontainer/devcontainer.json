@@ -1,0 +1,24 @@
+{
+    "name": "Rust - DaockerSystem",
+    "image": "rust:latest",
+
+    "customizations": {
+        "vscode": {
+            // "settings": {
+            // },
+            "extensions": [
+                // rust 提示
+                "rust-lang.rust-analyzer",
+
+                // toml 高亮
+                "tamasfe.even-better-toml",
+
+                // markdown
+                "yzhang.markdown-all-in-one",
+
+                // .gitignore
+                "codezombiech.gitignore"
+            ]
+        }
+    }
+}

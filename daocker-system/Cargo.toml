@@ -1,0 +1,19 @@
+[package]
+name = "daocker-system"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.92"
+async-std = "1.13.0"
+config = "0.14.1"
+jsonwebtoken = "9.3.0"
+lazy_static = "1.5.0"
+lombok = "0.4.0"
+salvo = { version = "0.74.0", features = ["anyhow", "jwt-auth", "cors"] }
+serde = { version = "1.0.214", features = ["derive", "serde_derive"] }
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "mysql"]}
+time = "0.3.36"
+tokio = { version = "1.41.0", features = ["macros"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
