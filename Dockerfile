@@ -1,4 +1,4 @@
-FROM node:lts-bookworm as builder
+FROM dockerproxy.net/library/node:lts-bookworm as builder
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY daocker-system/package.json .
 # 安装
 RUN yarn install --registry https://registry.npmmirror.com
 
-FROM node:lts-bookworm as runner
+FROM dockerproxy.net/library/node:lts-bookworm as runner
 
 WORKDIR /app
 
