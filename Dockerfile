@@ -1,4 +1,4 @@
-FROM node:lts-bookworm as builder
+FROM m.daocloud.io/node:lts-bookworm as builder
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY daocker-system/package.json .
 # 安装
 RUN yarn install --registry https://registry.npmmirror.com
 
-FROM node:lts-bookworm as runner
+FROM m.daocloud.io/node:lts-bookworm as runner
 
 WORKDIR /app
 
