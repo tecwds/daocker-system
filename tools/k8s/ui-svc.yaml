@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ui
+spec:
+  type: ClusterIP
+  ports:
+    - name: ui-http
+      port: 8080
+      targetPort: 80
+      protocol: TCP
+  selector:
+    # 根据标签查找 pod
+    app: ui
