@@ -1,0 +1,6 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: standard
+provisioner: kubernetes.io/no-provisioner  # 因为是手动管理PV（通过hostPath这种静态方式），所以这里指定无自动供应者
+parameters: {}
