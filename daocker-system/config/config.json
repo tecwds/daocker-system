@@ -3,8 +3,8 @@
     "username": "root",
     "password": "0000000Lg",
     "database": "docker-bigwork",
-    "host": "127.0.0.1",
-    "port": 3307,
+    "host": "192.168.56.5",
+    "port": 30306,
     "dialect": "mysql",
     "timezone": "+08:00"
   },
@@ -12,8 +12,8 @@
     "username": "root",
     "password": "0000000Lg",
     "database": "docker-bigwork",
-    "host": "127.0.0.1",
-    "port": 3307,
+    "host": "192.168.56.5",
+    "port": 30306,
     "dialect": "mysql",
     "timezone": "+08:00"
   },
@@ -21,8 +21,8 @@
     "username": "root",
     "password": "0000000Lg",
     "database": "docker-bigwork",
-    "host": "127.0.0.1",
-    "port": 3307,
+    "host": "192.168.56.5",
+    "port": 30306,
     "dialect": "mysql",
     "timezone": "+08:00"
   }
